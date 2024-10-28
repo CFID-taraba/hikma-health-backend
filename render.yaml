@@ -13,7 +13,7 @@ services:
     runtime: python
     # Uncomment if you want to deploy to the free tier first.
     # NOTE: free tier has degraded performance making it unusable in real world settings
-    # plan: free
+    plan: free
     buildCommand: pip install -r requirements.txt
 
     startCommand: ./app/run.sh
@@ -46,7 +46,7 @@ databases:
   - name: 'hikma-health-db'
     # Uncomment this line to use the free tier of the database
     # NOTE: FREE DATABASES ARE DELETED AFTER 90 DAYS!!! Remember NEVER to use a free database after for real patient data.
-    # plan: free
+    plan: free
     databaseName: hhdb
     user: hikma
     # highAvailability:
